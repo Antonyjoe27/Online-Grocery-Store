@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshCart - Online Grocery Store</title>
+    <style>
+        body {
+            background-color: #f4fdf4;
+            color: #222222;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #2e7d32;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        h2 {
+            color: #2e7d32;
+            border-bottom: 2px solid #2e7d32;
+            padding-bottom: 5px;
+        }
+        h3 {
+            color: #1b5e20;
+        }
+        div.section {
+            padding: 20px;
+            margin: 15px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 5px #cccccc;
+        }
+        nav a {
+            color: #ffffff;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 10px;
+        }
+        table, th, td {
+            border: 1px solid #a5d6a7;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #a5d6a7;
+        }
+        img {
+            max-width: 300px;
+            display: block;
+            margin: 10px 0;
+            border-radius: 6px;
+        }
+        footer {
+            background-color: #2e7d32;
+            color: #ffffff;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+        a {
+            color: #2e7d32;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section: Site title and navigation -->
+    <header>
+        <h1>FreshCart Online Grocery Store</h1>
+        <p>Farm-fresh groceries delivered to your doorstep</p>
+        <nav>
+            <a href="#products">Products</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Introduction Section -->
+    <div class="section" id="home">
+        <!-- This module introduces the store -->
+        <h2>Welcome to FreshCart</h2>
+        <p>FreshCart is your one-stop online destination for fresh fruits, vegetables, dairy products, and daily essentials. We source directly from local farmers to bring you the best quality at affordable prices.</p>
+        <p>Shop from the comfort of your home and get same-day delivery in select areas. Read more about us on our <a href="https://www.wikipedia.org" target="_blank">Wikipedia-style grocery info page</a> (external link, opens in new tab).</p>
+        <p><a href="#products">Jump to our Products section</a> (internal link using id).</p>
+        <p><a href="#top">Back to Top</a> (bookmark link).</p>
+    </div>
+
+    <!-- Products Section: Table of grocery items -->
+    <div class="section" id="products">
+        <h2 id="top">Our Products</h2>
+        <h3>Featured Grocery Items</h3>
+        <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?w=400" alt="Fresh vegetables and fruits basket">
+
+        <table>
+            <caption>Weekly Price List</caption>
+            <tr>
+                <th>Product</th>
+                <th>Category</th>
+                <th>Price (₹)</th>
+                <th>Stock Status</th>
+            </tr>
+            <tr>
+                <td>Fresh Tomatoes</td>
+                <td>Vegetables</td>
+                <td>40/kg</td>
+                <td>Available</td>
+            </tr>
+            <tr>
+                <td>Bananas</td>
+                <td>Fruits</td>
+                <td>50/dozen</td>
+                <td>Available</td>
+            </tr>
+            <tr>
+                <td>Toned Milk</td>
+                <td>Dairy</td>
+                <td>28/litre</td>
+                <td>Limited Stock</td>
+            </tr>
+            <tr>
+                <td>Basmati Rice</td>
+                <td>Grocery</td>
+                <td>120/kg</td>
+                <td>Available</td>
+            </tr>
+        </table>
+
+        <!-- Clickable image link to product category -->
+        <p>Click the image below to view our fruits collection:</p>
+        <a href="#products">
+            <img src="https://images.unsplash.com/photo-1610832958506-aa56368176cf?w=300" alt="Assorted fresh fruits - click to view collection">
+        </a>
+    </div>
+
+    <!-- Categories Section: Lists -->
+    <div class="section" id="categories">
+        <h2>Product Categories</h2>
+
+        <h3>Description List of Categories</h3>
+        <dl>
+            <dt>Fruits</dt>
+            <dd>Fresh seasonal fruits sourced daily from local orchards.</dd>
+            <dt>Vegetables</dt>
+            <dd>Farm-fresh vegetables harvested within 24 hours of delivery.</dd>
+            <dt>Dairy</dt>
+            <dd>Milk, cheese, butter, and yogurt from trusted dairy farms.</dd>
+        </dl>
+
+        <h3>Ordered List - How to Order (Nested)</h3>
+        <ol>
+            <li>Create an account
+                <ol>
+                    <li>Enter your name and email</li>
+                    <li>Set a password</li>
+                </ol>
+            </li>
+            <li>Browse products</li>
+            <li>Add items to cart</li>
+            <li>Checkout and make payment</li>
+        </ol>
+
+        <h3>Unordered List - Why Choose Us (Nested)</h3>
+        <ul>
+            <li>Quality Assurance
+                <ul>
+                    <li>100% Fresh Products</li>
+                    <li>Quality Checked</li>
+                </ul>
+            </li>
+            <li>Fast Delivery</li>
+            <li>Affordable Pricing</li>
+        </ul>
+    </div>
+
+    <!-- About Us Section -->
+    <div class="section" id="about">
+        <h2>About Us</h2>
+        <p>FreshCart was founded with the vision of making grocery shopping easier and more accessible for everyone. We believe in quality, affordability, and convenience.</p>
+        <p>Our team works round the clock to ensure fast and reliable delivery service across the city.</p>
+    </div>
+
+    <!-- Contact Section: Email and Phone links -->
+    <div class="section" id="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions? Reach out to us anytime.</p>
+        <p>Email us at: <a href="mailto:support@freshcart.com">support@freshcart.com</a> (email link)</p>
+        <p>Call us at: <a href="tel:+911234567890">+91 12345 67890</a> (phone link)</p>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2026 FreshCart Online Grocery Store. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
